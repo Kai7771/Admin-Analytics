@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <style>
-        #body-row {
+         #body-row {
             margin-left:0;
             margin-right:0;
         }
         #sidebar-container {
-            min-height: 100vh;   
+            min-height: 160vh;   
             background-color: #0049B5;
             padding: 0;
         }
@@ -73,143 +73,10 @@
         text-align: right;
         padding-left: 10px;
         }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f6f6f6;
-    font-family: 'Roboto', sans-serif;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 15%  auto;
-    grid-template-areas: "sect1 sect2";
-    height: 90vh;
-}
-
-footer {
-    color: #ccc;
-    background-color: #fff;
-    text-align: center;
-}
-
-aside {
-    margin-top: 3rem;
-}
-
-.left-section {
-    grid-area: sect1;
-    background-color: #0049b5;
-}
-
-.left-nav img {
-    width: 20px;
-    margin-right: 1rem;
-}
-
-.left-nav a {
-    text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.3rem;
-    line-height: 30px;
-    color: #fff;
-}
-
-.left-nav li {
-    padding: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-header {
-    background-color: #fff;
-    height: 8vh;
-}
-
-.user,
-.country {
-    width: 30px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.nav {
-    width: 600px;
-    height: 8vh;
-    display: flex;
-    position: relative;
-    margin-left: 1rem;
-    margin-top: 0.3rem;
-}
-
-.nav img {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 15%;
-    right: 1%
-}
-
-.search {
-    width: 100%;
-    height: 80%;
-    border: none;
-    border: 1px solid rgba(119, 119, 119, 0.2);
-    padding: 1rem;
-}
-
-.nav1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 12%;
-    margin-right: 10rem;
-    position: relative;
-}
-
-
-.nav2 {
-    display: flex;
-    padding: 1rem;
-    border-left: 1px solid rgba(119, 119, 119, 0.5);
-    width: 8%;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 1rem;
-}
-
-.topic {
-    background-color: #1A73E8;
-    color: #fff;
-    height: 17vh;
-}
-
-.topic h1{
-    font-size: 2.1rem;
-    line-height: 2.4rem;
-    font-weight: normal;
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
-    padding-top: 1rem;
-}
-
-.topic h3 {
-    font-size: 1.2rem;
-    line-height: 23px;
-    font-weight: bold;
-    margin-left: 2rem;
-    margin-top: 1.2rem;           
+        .p-link {
+    height: 5vh;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .links {
@@ -218,7 +85,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 5vh;
 }
 
 .links a {
@@ -247,42 +113,9 @@ nav {
     padding: 0.3rem;
 }
 
-
-.top-headings {
-    margin-top: 0.5rem;
-    float: right;
-    height: 5vh;
-}
-
-.top-headings a {
-    text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: 23px;
-    color: #777777;
-    margin-right: 5rem;
-    transition: all 0.3s ease;
-}
-
-
-.top-headings a:hover {
-    border-bottom: 2px solid #1A73E8;
-    padding: 0.3rem;
-}
-
-.top-headings a:visited {
-    border-bottom: 2px solid #1A73E8;
-    padding: 0.3rem;
-}
-
-.top-headings a:active {
-    border-bottom: 2px solid #1A73E8;
-    padding: 0.3rem;
-}
-
 .sect {
-    margin: 3rem 0rem;
+    margin-top: 3rem;
+
 }
 
 .charts {
@@ -307,8 +140,43 @@ nav {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.main-section{
+    background-color: #f6f6f6;
+    margin-top: -2.7rem;
+}
 
-/* MAP */
+.top-headings {
+    margin-top: 0.5rem;
+    float: right;
+    height: 5vh;
+}
+
+.top-headings a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 23px;
+    color: #777777;
+    margin-right: 5.5rem;
+    transition: all 0.3s ease;
+}
+
+
+.top-headings a:hover {
+    border-bottom: 2px solid #1A73E8;
+    padding: 0.3rem;
+}
+
+.top-headings a:visited {
+    border-bottom: 2px solid #1A73E8;
+    padding: 0.3rem;
+}
+
+.top-headings a:active {
+    border-bottom: 2px solid #1A73E8;
+    padding: 0.3rem;
+}
 
 .map-header {
     font-style: normal;
@@ -317,14 +185,13 @@ nav {
     line-height: 23px;
     color: #777777;
     background-color: #fff;
-    margin-top: 0.8rem;
+    margin-top: 4rem;
     display: flex;
     text-align: justify;
     align-items: center;
     margin-left: 1.5rem;
     width: 96.5%;
     padding: 0.3rem;
-    border-bottom: 1px solid #f6f6f6;
 }
 
 #Row2 {
@@ -338,9 +205,11 @@ nav {
     grid-template-areas: "pie line";
     gap: 1.2rem;
     height: 58vh;
-    width: 96.5%;
-    margin-left: 1.5rem;
-
+    width: 96.7%;
+    margin-left: 1.45rem;
+    background-color: #fff;
+    border: 1px solid rgba(119, 119, 119, 0.1);
+    margin-top: -0.5rem;
 }
 
 .map1{
@@ -349,200 +218,97 @@ nav {
 
 
 .list2 {
-    height: 100%;
-    margin-top: 1rem;
+    margin-top: 0.9rem;
+    height: 88%;
     width: 90%;
-    border: 2px solid #f6f6f6;
     padding: 1rem;
     position: relative;
-}
-
-.list2 h4 {
-    background-color: #fdfdfd;
-    padding: 0.4rem;
-    margin-top: -1rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #f6f6f6;
-    width: 100%;
-    display: inline-block;
-}
-
-
-.first-list {
-    border-top: 1px solid rgba(119, 119, 119, 0.2);
-    padding-top: 0.5rem;
-}
-
-.list2 li {
-    list-style-type: none;
-    padding: 0.4rem;
-    width: 110%;
-    margin-left: -1.1rem;
-    margin-bottom: 1rem;
-    margin-right: -1rem;
-    border-bottom: 1px solid rgba(119, 119, 119, 0.2);
-}
-
-.list2::after {
-    content: "";
-    position: absolute;
-    width:1px;
-    height: 17rem;
-    background-color: #1A73E8;
-    border: 2px solid #1A73E8;
-    border-radius: 101px;
-    top: 3rem;
-    left: 18rem;
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  
-  body {
-    background-color: #f6f6f6;
-    font-family: 'Roboto', sans-serif;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    color: #ccc;
-    background-color: #fff;
-    text-align: center;
-
-}
-
-.left-section {
-    display:flex;
-    padding:5px;
-}
-
-.left-nav img {
-    width: 10px;
-    margin-right:5px;
-}
-
-.left-nav a {
-    text-decoration: none;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.3rem;
-    line-height: 30px;
-    color: #fff;
-}
-
-.left-nav li {
-    padding: 3px;
-    margin-bottom: 0.5rem;
-}
-
-header {
-    background-color: #fff;
-    height: 8vh;
-}
-
-ul{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.right-section{
-    display: flex;
-    flex-direction: column;
-}
-.right-section > header{
-    margin-bottom: 30px;
-    justify-content: flex-start;
-}
-
-nav {
-    display: flex;
-}
-
-.search {
-    height: 80%;
-    border: none;
     border: 1px solid rgba(119, 119, 119, 0.2);
 }
 
-.user,
-.country {
-    width: 30px;
+.list2 h4 {
+    color: #777777;
+    background-color: #fdfdfd;
+    padding: 0.4rem;
+    margin-top: -1.4rem;
+    margin-bottom: 0.5rem;
+    margin-left: -1rem;
+    width: 111.5%;
+    display: inline-block;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.2);
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    margin: 1rem 0rem;
+
+.list2 li {
+    list-style-type: none;
+    padding: 0.5rem;
+    width: 122%;
+    margin-left: -3.5rem;
+    margin-bottom:0.7rem;   
 }
 
-.nav img {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 15%;
-    right: 1%
-
+.first-list {
+    border-right: 1px solid rgba(119, 119, 119, 0.2);
+    border-bottom: 1px solid rgba(119, 119, 119, 0.2);
+    box-sizing: border-box;
+    margin-top: -0.5rem;
+}
+.second-list{
+    border: 1px solid rgba(119, 119, 119, 0.2);
+    box-sizing: border-box;
+    margin-top: -0.1rem;
 }
 
-.nav1 {
-     padding-left: 10px;
-    }
 
 
-.nav2 {
-    padding-right: 2rem;
-    border-left: 1px solid rgba(119, 119, 119, 0.5);
+.image-user {
+    width: 40px;
+    margin-right: 2rem;
 }
 
-.topic {
-    background-color: #1A73E8;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px 0px;
-}
 
-.topic h1{
-    font-size: 2.1rem;
-    line-height: 2.4rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom:rem;
-    padding-top: 1px;
-}
 
-.topic h3 {
-    font-size: 1.2rem;
-    line-height: 23px;
-    font-weight: bold;
-    margin-left: 2rem;
-    margin-top: 1px; 
-    text-align: center;
-    padding-bottom: 5px;
-}
+@media only screen and (max-width: 600px) {
 
+    #sidebar-container {
+            min-height: 260vh;   
+            background-color: #0049B5;
+            padding: 0;
+        }
+  #sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+        content: " \f0d7";
+        font-family: FontAwesome;
+        display: inline;
+        text-align: right;
+        padding-left: 10px;
+        }
+        /* Opened submenu icon */
+        #sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+        content: " \f0da";
+        font-family: FontAwesome;
+        display: inline;
+        text-align: right;
+        padding-left: 10px;
+        }
+
+  .p-link {
+    height: 5vh;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
 .links {
-    margin-left: 3.5rem;
+    width: 30%;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 5vh;
-    margin-top: 20px;
+    justify-content: center;
 }
 
 .links a {
     font-style: normal;
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     line-height: 23px;
     color: #777777;
     text-decoration: none;
@@ -565,30 +331,30 @@ nav {
     padding: 0.3rem;
 }
 
+.main-section{
+    margin-top: -5 rem;
+}
 
 .top-headings {
-   margin-top: 20px 0px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     display: flex;
-    flex-direction:row;
-    border-top:  1px solid rgba(119, 119, 119, 0.2);
-  
-
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top-headings a {
     text-decoration: none;
+    margin-bottom: 1rem;
+    align-self: flex-start;
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
-    line-height: 20px;
+    font-size: 0.8rem;
+    line-height: 0.5rem;
     color: #777777;
     transition: all 0.3s ease;
-
 }
 
-.top-headings>span{
-      flex: 1;
-}
 
 .top-headings a:hover {
     border-bottom: 2px solid #1A73E8;
@@ -607,21 +373,17 @@ nav {
 
 .sect {
     margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
 }
 
 .charts {
     display: flex;
     flex-direction: column;
-    margin-bottom: 300px;
+    margin: 290px auto;
  
 }
 
 .pie {
-    margin-top:10px;
+    margin-top:50px;
     background-color: #fff;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -629,13 +391,14 @@ nav {
 .line {
     background-color: #fff;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    margin-top:10px 0px; 
+    margin-top:10px; 
     
 
 }
 
-
-/* MAP */
+.body-map{
+    margin-top: -15px;
+}
 
 .map-header {
     font-style: normal;
@@ -643,98 +406,90 @@ nav {
     font-size: 1rem;
     line-height: 23px;
     color: #777777;
-    background-color: #fff;
-    margin-top: 0.8rem;
     display: flex;
     text-align: justify;
     align-items: center;
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
+    width: 96.5%;
     padding: 0.3rem;
-    border-bottom: 1px solid #f6f6f6;
 }
 
 #Row2 {
     height:350px;
-    margin-top:2px;
+    margin-top:15px;
 }
 
-.bodymap{
-    margin-top: 10px;
-}
+
+
 .map {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    margin-left: 0.5rem;
+    background-color: #fff !important;
+    border: 1px solid rgba(119, 119, 119, 0.1);
+    margin-top: 1rem;
 }
 
 .map1{
-  margin: 0px;
-  }
+    margin-left: 0.5rem;
+}
 
 
 .list2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    border: 2px solid #f6f6f6; 
-  
-   
+    margin-top: 0.9rem;
+    background-color: #fff;
+    height: 110%;
+    width: 90%;
+    padding: 1rem;
+    position: relative;
+    border: 1px solid rgba(119, 119, 119, 0.2);
 }
 
 .list2 h4 {
+    color: #777777;
     background-color: #fdfdfd;
     padding: 0.4rem;
-    margin-top: -1rem;
-    text-align: center;
+    margin-top: -1.4rem;
     margin-bottom: 0.5rem;
-    border: 1px solid #f6f6f6;
-   
-}
-
-
-.first-list {
-    border-top: 1px solid rgba(119, 119, 119, 0.2);
-    padding-top: 0.5rem;
-}
-
-.list2 li {
-    list-style-type: none;
-    padding: 0.4rem;
-    width: 110%;
-    margin-bottom: 1rem;
+    margin-left: -1rem;
+    width: 111.5%;
+    display: inline-block;
     border-bottom: 1px solid rgba(119, 119, 119, 0.2);
 }
 
-.list2::after {
-    display: none;
-} 
 
+.list2 li {
+    list-style-type: none;
+    padding: 0.5rem;
+    width: 122%;
+    margin-left: -3.5rem;
+    margin-bottom:0.7rem;   
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .example {background: blue;}
-} 
+.first-list {
+    border-right: 1px solid rgba(119, 119, 119, 0.2);
+    border-bottom: 1px solid rgba(119, 119, 119, 0.2);
+    box-sizing: border-box;
+    margin-top: -0.5rem;
+}
+.second-list{
+    border: 1px solid rgba(119, 119, 119, 0.2);
+    box-sizing: border-box;
+    margin-top: -0.1rem;
+}  
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {background: orange;}
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {background: pink;}
+.image-user {
+    width: 25px;
+    height: 25px;
+    margin-right: 2rem;
 }
 
+}
     </style>
 </head>
 <body>
-      <div class="example">
-                <h1>Welcome back Admin</h1>
-                <h3>CAR PARK APPLICATION</h3>
-            </div>
-    <div class="container-fluid p-0">
-        <div class="row" id="body-row">
+    <div class="container-fluid p-0" style="background-color: #F6F6F6;">
+        <div class="row " id="body-row">
             <div id="sidebar-container" class="sidebar">
                 <ul class="list-group">
                     <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
@@ -745,7 +500,6 @@ nav {
                             <span id="collapse-text" class="menu-collapsed">Menu</span>
                         </div>
                     </a>
-                    
                         <a href="#" class="d-flex w-100 justify-content-start align-items-center  list-group-item list-group-item-action border-0 flex-column align-items-start" style="background-color: #0049B5">
                             <span class="mr-auto">
                                     <img class="mr-auto" src="https://res.cloudinary.com/benjee/image/upload/v1571813970/Vector_excuh3.svg" alt="Dashboard" width="30" height="30">
@@ -782,11 +536,21 @@ nav {
                                     <span class="submenu-icon ml-auto"></span>
                             </span>  
                         </a>
+                        <a href="#" class="d-flex w-100 justify-content-start align-items-center list-group-item list-group-item-action border-0 flex-column align-items-start" style="background-color: #0049B5">
+                                <span class="mr-auto">
+                                        <img class="mr-auto" src="https://res.cloudinary.com/benjee/image/upload/v1571904849/Group_47_gq0grj.svg" alt="Settings" width="25" height="25">
+                                        <span class="menu-collapsed">Cancelation Policy</span>
+                                        <span class="submenu-icon ml-auto"></span>
+                                </span>  
+                            </a>
                 </ul>
             </div>
             <!--For main content area -->
-            <div class="col w-100 p-0">
+            <div class="col p-0 w-25">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="d-flex">
+                        <span id="collapse-menu" data-toggle="sidebar-container" class="fa mr-3 text-muted" style="font-size: 22px; cursor: pointer;"></span>
+                    </div>
                     <div class="col-7 p-2 mb-0">   
                         <form class="form-inline active-cyan-4">
                             <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
@@ -800,7 +564,8 @@ nav {
                         
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="col-8 pt-3 d-flex">
-                                <i class="fa fa-user pr-1" aria-hidden="true"></i>
+                                <img src="https://res.cloudinary.com/dx1a98ntu/image/upload/v1571810941/person_dncjgs.png" alt="User"
+                                class="image-user">
                                 <p class="text-muted">John Travolta</p>
                         </div>
                         <div class="col-4  d-flex border-left justify-content-end">
@@ -815,21 +580,27 @@ nav {
                         <h6 class="pt-2">CAR PARK APPLICATION </h6>
                     </div>
                 </div>
-                <section class="right-section">
-            <div class="links">
-                <a href="#">Overview</a>
-                <a href="#">Analytics</a>
-                <a href="#">Demographics</a>
-            </div>
 
-            <div class="top-headings">
-                    <a href="#">New Users</a>
-                    <a href="#">Existing Users</a>
-                    <a href="#">Issues</a>
-                    <a href="#">CarPark</a>
-            </div>
-            <!--PIE CHART SECTION -->
-            <section class="sect">
+                <!-- <div class="col mt-2 p-3">
+
+            </div>                       -->
+            
+            <div class="p-link">
+                    <div class="links">
+                        <a href="#">Overview</a>
+                        <a href="#">Analytics</a>
+                        <a href="#">Demographics</a>
+                    </div>
+                </div>
+                <!-- CHART SECTION -->
+                <div class="main-section">
+                    <div class="top-headings">
+                        <a href="#">New Users</a>
+                        <a href="#">Existing Users</a>
+                        <a href="#">Issues</a>
+                        <a href="#">CarPark</a>
+                    </div>
+                      <section class="sect">
                 <div class="charts">
                     <div class="pie">
                         <canvas id ="pieChart"></canvas>
@@ -839,173 +610,48 @@ nav {
                     </div>
                 </div>
             </section>
-            
-            <div class="body-map">
-                <h3 class="map-header">Car Park Locations</h3>
-            </div>
-            <!-- MAP SECTION -->
-            <section class="map">
-                <div class="map1">
-                           <iframe width="100%" height="100%" id="Row2" src="https://maps.google.com/maps?q=lagos%2C%20nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                </div>
-                <div class="list2">
-                    <ul>
-                        <h4>List View</h4>
-                        <li class="first-list">Maryland, Lagos</li>
-                        <li>Lekki, Lagos</li>
-                        <li>Gwarimpa, Abuja</li>
-                        <li>Wuse, Abuja</li>
-                        <li>Maitama, Abuja</li>
-                        <li>Wuse, Abuja</li>
-                    </ul>
-                </div>
-            </section>
-            </div>
+                    </div>  
                     
+                    <div class="body-map">
+                        <h3 class="map-header">Car Park Locations</h3>
+                    </div>
+                        <!-- MAP SECTION -->
+                    <section class="map">
+                        <div class="map1">
+                               <iframe width="100%" height="100%" id="Row2" src="https://maps.google.com/maps?q=lagos%2C%20nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <div class="list2">
+                            <h4>List View</h4>
+                            <ul>
+                                <li class="first-list">Maryland, Lagos</li>
+                                <li class="second-list">Lekki, Lagos</li>
+                                <li class="second-list">Gwarimpa, Abuja</li>
+                                <li class="second-list">Wuse, Abuja</li>
+                                <li class="second-list">Maitama, Abuja</li>
+                                <li class="second-list last-list">Wuse, Abuja</li>
+                            </ul>
+                        </div>
+                    </section>
         </div>
-       
-
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-
-
     <script>
-        // PIE CHART
-        let pieChart = document.getElementById('pieChart').getContext('2d');
-
-        // GLOBAL OPTIONS
-        Chart.defaults.global.defaultFontFamily='Lato';
-        Chart.defaults.global.defaultFontSize=18;
-        Chart.defaults.global.defaultFontColor='#777';
-
-        let massivePopChart = new Chart(pieChart, {
-            type: 'pie',
-            data: {
-                labels:['250 Existing Users', '16 New Users', '14 Dummy Users'],
-                datasets:[{
-                    label: 'Population',
-                    data:[
-                        617594,
-                        181045,
-                        153060,
-                    ],
-                    // backgroundColor: 'transparent',
-                    backgroundColor: [
-                        '#556080',
-                        '#f0c419',
-                        '#71C285;'
-                    ],
-                    borderWidth: 1,
-                    borderColor: '#1A73E8',
-                    hoverBorderWidth: 3,
-                    hoverBorderColor: '#000',
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: 'October, 2019',
-                    FontSize: 15,
-                },
-                legend: {
-                    display: true,
-                    position: 'right',
-                    labels: {
-                        fontColor: '#000'
-                    }
-                },
-                layout: {
-                    padding:{
-                        left: 50,
-                        right:0,
-                        bottom: 0,
-                        top:0
-                    }
-                },
-                tooltips: {
-                    enabled:true
-                }
-            }
-        })
-
-
-
-
-        // LINE CHART
-        let myChart = document.getElementById('myChart').getContext('2d');
-
-        // GLOBAL OPTIONS
-        Chart.defaults.global.defaultFontFamily='Lato';
-        Chart.defaults.global.defaultFontSize=18;
-        Chart.defaults.global.defaultFontColor='#777';
-
-        let massPopChart = new Chart(myChart, {
-            type: 'line',
-            data: {
-                labels:['01', '02', '03', '04', '05', '06'],
-                datasets:[{
-                    label: 'Population',
-                    data:[
-                        617594,
-                        181045,
-                        153060,
-                        106519,
-                        105162,
-                        95072
-                    ],
-                    backgroundColor: 'transparent',
-                    borderWidth: 1,
-                    borderColor: '#1A73E8',
-                    hoverBorderWidth: 3,
-                    hoverBorderColor: '#000',
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: 'October, 2019',
-                    FontSize: 15,
-                },
-                legend: {
-                    display: false,
-                    position: 'top',
-                    labels: {
-                        fontColor: '#000'
-                    }
-                },
-                layout: {
-                    padding:{
-                        left: 50,
-                        right:0,
-                        bottom: 0,
-                        top:0
-                    }
-                },
-                tooltips: {
-                    enabled:true
-                }
-            }
-        })
-    
-
     $(document).ready(function(){
 // Hide submenus
 $('#body-row .collapse').collapse('hide'); 
 
 // Collapse/Expand icon
-$('#collapse-icon').addClass('fa-angle-double-left'); 
+$('#collapse-icon').addClass('fa-angle-double-left');
+$('#collapse-menu').addClass('fa-angle-double-right'); 
 
 // Collapse click
 $('[data-toggle=sidebar-colapse]').click(function() {
     SidebarCollapse();
 });
-
 function SidebarCollapse () {
     $('.menu-collapsed').toggleClass('d-none');
     $('.sidebar-submenu').toggleClass('d-none');
@@ -1013,9 +659,148 @@ function SidebarCollapse () {
     $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
     
     // Collapse/Expand icon
-    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+    $('#collapse-icon').toggleClass('fa-angle-double-right fa-angle-double-left');
 }
 });
+// Collapse click
+$('[data-toggle=sidebar-container]').click(function() {
+    SidemenuCollapse();
+});
+//Collapse Side Menu
+function SidemenuCollapse () {
+    $('#sidebar-container').toggleClass('d-none');
+    // Collapse/Expand icon
+    $('#collapse-menu').toggleClass('fa-angle-double-right fa-angle-double-left');
+}
+
+//Hide Menu on Load
+$(document).ready(function(){
+    $('#sidebar-container').toggleClass('d-none');
+})
+$(document).ready(function(){
+    $('.menu-collapsed').toggleClass('d-none');
+    $('.sidebar-submenu').toggleClass('d-none');
+    $('.submenu-icon').toggleClass('d-none');
+    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+    
+    // Collapse/Expand icon
+    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+})
+
+
+// LINE CHART
+let myChart = document.getElementById('myChart').getContext('2d');
+
+// GLOBAL OPTIONS
+Chart.defaults.global.defaultFontFamily='Lato';
+Chart.defaults.global.defaultFontSize=18;
+Chart.defaults.global.defaultFontColor='#777';
+
+let massPopChart = new Chart(myChart, {
+    type: 'line',
+    data: {
+        labels:['01', '02', '03', '04', '05', '06'],
+        datasets:[{
+            label: 'Population',
+            data:[
+                617594,
+                181045,
+                153060,
+                106519,
+                105162,
+                95072
+            ],
+            backgroundColor: 'transparent',
+            borderWidth: 1,
+            borderColor: '#1A73E8',
+            hoverBorderWidth: 3,
+            hoverBorderColor: '#000',
+        }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: 'October, 2019',
+            FontSize: 15,
+        },
+        legend: {
+            display: false,
+            position: 'top',
+            labels: {
+                fontColor: '#000'
+            }
+        },
+        layout: {
+            padding:{
+                left: 50,
+                right:0,
+                bottom: 0,
+                top:0
+            }
+        },
+        tooltips: {
+            enabled:true
+        }
+    }
+})
+
+            // PIE CHART
+            let pieChart = document.getElementById('pieChart').getContext('2d');
+
+// GLOBAL OPTIONS
+Chart.defaults.global.defaultFontFamily='Lato';
+Chart.defaults.global.defaultFontSize=18;
+Chart.defaults.global.defaultFontColor='#777';
+
+let massivePopChart = new Chart(pieChart, {
+    type: 'pie',
+    data: {
+        labels:['250 Existing Users', '16 New Users', '14 Dummy Users'],
+        datasets:[{
+            label: 'Population',
+            data:[
+                617594,
+                181045,
+                153060,
+            ],
+            // backgroundColor: 'transparent',
+            backgroundColor: [
+                '#556080',
+                '#f0c419',
+                '#71C285;'
+            ],
+            borderWidth: 1,
+            borderColor: '#1A73E8',
+            hoverBorderWidth: 3,
+            hoverBorderColor: '#000',
+        }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: 'October, 2019',
+            FontSize: 15,
+        },
+        legend: {
+            display: true,
+            position: 'right',
+            labels: {
+                fontColor: '#000'
+            }
+        },
+        layout: {
+            padding:{
+                left: 50,
+                right:0,
+                bottom: 0,
+                top:0
+            }
+        },
+        tooltips: {
+            enabled:true
+        }
+    }
+})
     </script>
 </body>
 </html>
